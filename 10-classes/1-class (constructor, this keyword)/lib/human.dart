@@ -2,7 +2,7 @@ class Human {
   String _name = '';
 
   Human(String name) {
-    _name = name;
+    this.setName(name);
   }
 
   void sayHello() {
@@ -11,5 +11,11 @@ class Human {
     } else {
       print('hi, i\'m ${_name}');
     }
+  }
+
+  setName(String name) {
+    this._name = name;
+
+    return this;
   }
 }
